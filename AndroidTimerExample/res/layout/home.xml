@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.woodlumhoodlum.myapplication.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:text="" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="#000000">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="166dp"
+            android:text="@string/timerVal"
+            android:id="@+id/taskButton1"
+            android:layout_gravity="left|top"
+            android:shadowColor="#ffffff"
+            android:background="#277118"
+            android:clickable="true"
+            android:singleLine="false" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="93dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1"
+            android:id="@+id/taskTitle1"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="166dp"
+            android:text="@string/timerVal"
+            android:id="@+id/taskButton2"
+            android:layout_gravity="right|top"
+            android:shadowColor="#ffffff"
+            android:background="#277118"
+            android:clickable="true"
+            android:singleLine="false" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="64dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2"
+            android:id="@+id/taskTitle2"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="166dp"
+            android:text="@string/timerVal"
+            android:id="@+id/taskButton3"
+            android:layout_gravity="center"
+            android:shadowColor="#ffffff"
+            android:background="#277118"
+            android:clickable="true"
+            android:singleLine="false" />
+
+        <TextView
+            android:layout_width="54dp"
+            android:layout_height="138dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="3"
+            android:id="@+id/taskTitle3"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="166dp"
+            android:text="@string/timerVal"
+            android:id="@+id/taskButton4"
+            android:layout_gravity="left|bottom"
+            android:shadowColor="#ffffff"
+            android:background="#277118"
+            android:clickable="true"
+            android:singleLine="false" />
+
+        <TextView
+            android:layout_width="73dp"
+            android:layout_height="150dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="4"
+            android:id="@+id/taskTitle4"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="166dp"
+            android:text="@string/timerVal"
+            android:id="@+id/taskButton5"
+            android:layout_gravity="right|bottom"
+            android:shadowColor="#ffffff"
+            android:background="#277118"
+            android:clickable="true"
+            android:singleLine="false" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="150dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="5"
+            android:id="@+id/taskTitle5"
+            android:layout_gravity="right|bottom"
+            android:layout_marginTop="15dp"
+            android:phoneNumber="true"
+            android:singleLine="true" />
+
+    </FrameLayout>
+
+</FrameLayout>
